@@ -58,9 +58,9 @@ public:
 
         return 0;
     }
-}; // namespace kys
+};
 
-} // namespace
+} // namespace kys
 
 int main(int argc, char** argv)
 {
