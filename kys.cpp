@@ -1,5 +1,6 @@
 #include <iostream>
 #include <memory>
+#include <fmt/core.h>
 
 namespace kys {
 
@@ -8,11 +9,11 @@ class Engine
 public:
     Engine()
     {
-        std::cout << "Engine created\n";
+        fmt::print("Engine created\n");
     }
     ~Engine()
     {
-        std::cout << "Good bye" << std::endl;
+        fmt::print("Good bye\n");
     }
 
     void setStartWindowSize(int a_width, int a_height)
@@ -23,7 +24,7 @@ public:
 
     int init()
     {
-        std::cout << "TODO: install and use SDL here" << std::endl;
+        fmt::print("TODO: install and use SDL here\n");
         return 0;
     }
 
@@ -37,7 +38,7 @@ class TitleScene
 public:
     int run()
     {
-        std::cout << "Welcome to TitleScene" << std::endl;
+        fmt::print("Welcome to TitleScene\n");
         return 0;
     }
 };
@@ -47,7 +48,7 @@ class Application
 public:
     int run()
     {
-        std::cout << "Hello, KYS" << std::endl;
+        fmt::print("Hello, KYS\n");
 
         std::unique_ptr<Engine> engine(new Engine);
         engine->setStartWindowSize(1280, 720);
