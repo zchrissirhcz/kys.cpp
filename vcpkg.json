@@ -2,17 +2,72 @@
   "name": "kys-cpp",
   "version-semver": "0.0.0",
   "dependencies": [
+    "fmt",
     "sdl2",
-    "fmt"
+    "sdl2-image",
+    "sdl2-ttf",
+    "sdl2-mixer",
+    "lua",
+    "opencc",
+    "sqlite3",
+    "libiconv",
+    "asio",
+    "picosha2",
+    "yaml-cpp",
+    "libzip"
   ],
   "overrides": [
+    {
+      "name": "fmt",
+      "version": "10.0.0"
+    },
     {
       "name": "sdl2",
       "version": "2.26.5"
     },
     {
-      "name": "fmt",
-      "version": "10.0.0"
+      "name": "sdl2-image",
+      "version": "2.6.3"
+    },
+    {
+      "name": "sdl2-ttf",
+      "version": "2.20.2"
+    },
+    {
+      "name": "sdl2-mixer",
+      "version": "2.6.3"
+    },
+    {
+      "name": "lua",
+      "version": "5.4.6"
+    },
+    {
+      "name": "opencc",
+      "version": "1.1.6"
+    },
+    {
+      "name": "sqlite3",
+      "version": "3.42.0"
+    },
+    {
+      "name": "libiconv",
+      "version": "1.17"
+    },
+    {
+      "name": "asio",
+      "version": "1.28.0"
+    },
+    {
+      "name": "picosha2",
+      "version": "2018-07-30"
+    },
+    {
+      "name": "yaml-cpp",
+      "version": "0.7.0"
+    },
+    {
+      "name": "libzip",
+      "version": "1.9.2"
     }
   ],
   "builtin-baseline": "da21e45c9ae689f63aa27f3a4ee0e64fe6b16494"

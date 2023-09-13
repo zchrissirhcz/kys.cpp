@@ -29,6 +29,10 @@ cd vcpkg
 # export HTTP_PROXY=http://xxx:yyy@proxy.com:1234
 # export HTTPS_PROXY=http://xxx:yyy@proxy.com:1234
 ./bootstrap-vcpkg.sh
+
+# optional, recommended
+./vcpkg integrate zsh # zsh
+./vcpkg integrate bash # bash
 ```
 
 vim `~/.pathrc` by adding:
