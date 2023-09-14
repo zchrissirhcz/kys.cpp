@@ -1,3 +1,5 @@
 build/*/**
 .cache/
 vcpkg_installed/
+mlcc/
+__pycache__

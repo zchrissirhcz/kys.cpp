@@ -10,6 +10,10 @@ vcpkg install
 ```
 Then
 ```bash
+python sledpkg_run.py
+```
+Finally
+```bash
 cd build
 ./linux-x64.sh      # build on linux
 ./vs2022-x64.cmd    # build on Windows
