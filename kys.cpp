@@ -62,8 +62,23 @@ public:
 
 } // namespace kys
 
+class GameUtil
+{
+public:
+    static std::string& path()
+    {
+        static std::string s = "../game/";
+        return s;
+    }
+};
+
 int main(int argc, char** argv)
 {
+    if (argc >= 2)
+    {
+        GameUtil::path() = argv[1];
+    }
+    fmt::print("Game path is {}\n", GameUtil::path());
     kys::Application app;
     return app.run();
 }
