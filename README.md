@@ -8,7 +8,9 @@ To build: with cmake and vcpkg installed(in PATH), run:
 ```bash
 vcpkg install
 ```
-or
+Then
 ```bash
-./build.sh
+cd build
+./linux-x64.sh      # build on linux
+./vs2022-x64.cmd    # build on Windows
 ```
