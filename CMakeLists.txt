@@ -28,15 +28,6 @@ add_library(mlcc INTERFACE
 )
 target_include_directories(mlcc INTERFACE ${CMAKE_SOURCE_DIR}/deps/mlcc)
 
-
-add_executable(kys
-  kys.cpp
-)
-
-target_link_libraries(kys PRIVATE
-  fmt::fmt
-  mlcc
-)
-
+add_subdirectory(src/kys)
 
 include(cmake/summary.cmake)
