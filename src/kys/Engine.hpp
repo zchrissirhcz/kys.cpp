@@ -1,5 +1,7 @@
 #pragma once
 
+#include <memory>
+
 namespace kys {
 
 class Engine
@@ -18,11 +20,8 @@ public:
     int init();
 
 private:
-    void destroy();
-
-private:
-    int m_start_window_height;
-    int m_start_window_width;
+    class Impl;
+    std::unique_ptr<Impl> d_ptr;
 };
 
 } // namespace kys
