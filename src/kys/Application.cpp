@@ -12,7 +12,7 @@ int Application::run()
 {
     fmt::print("Hello, KYS\n");
 
-    std::unique_ptr<Engine> engine(new Engine);
+    Engine* engine = Engine::getInstance();
     engine->setStartWindowSize(1280, 720);
     engine->init();
 

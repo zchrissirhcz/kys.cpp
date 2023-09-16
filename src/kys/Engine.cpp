@@ -5,17 +5,21 @@ namespace kys {
 
 Engine::Engine()
 {
-    fmt::print("Engine created\n");
 }
 
 Engine::~Engine()
 {
-    fmt::print("Good bye\n");
+    destroy();
+}
+
+void Engine::destroy()
+{
+    fmt::print("TODO: put SDL related release here\n");
 }
 
 int Engine::init()
 {
-    fmt::print("TODO: install and use SDL here\n");
+    fmt::print("TODO: call SDL related init here\n");
     return 0;
 }
 
