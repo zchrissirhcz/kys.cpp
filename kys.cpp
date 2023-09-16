@@ -64,7 +64,16 @@ public:
 
 class GameUtil
 {
+private:
+    GameUtil() { }
+    ~GameUtil() { }
 public:
+    static GameUtil* getInstance()
+    {
+        static GameUtil gu;
+        return &gu;
+    }
+
     static std::string& path()
     {
         static std::string s = "../game/";
@@ -74,11 +83,12 @@ public:
 
 int main(int argc, char** argv)
 {
+    GameUtil* gu = GameUtil::getInstance();
     if (argc >= 2)
     {
-        GameUtil::path() = argv[1];
+        gu->path() = argv[1];
     }
-    fmt::print("Game path is {}\n", GameUtil::path());
+    fmt::print("Game path is {}\n", gu->path());
     kys::Application app;
     return app.run();
 }
